@@ -5,7 +5,7 @@ MAIN_DIR = src
 OUTPUT = $(ROOT)/output
 MODEL_OUTPUT = $(ROOT)/model-output
 
-_DEPS = readfile.h, writefile.h, booksorter.h
+_DEPS = readfile.hpp, writefile.hpp, booksorter.hpp
 DEPS = $(patsubst %,$(MAIN_DIR)/%,$(_DEPS))
 
 _OBJ = readfile.o writefile.o booksorter.o init.o
